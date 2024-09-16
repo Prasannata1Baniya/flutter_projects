@@ -16,18 +16,22 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          AnimatedContainer(
-            height: height,
-              width: width,
-              duration:const  Duration(seconds: 3),
-            decoration:const  BoxDecoration(
-              color: Colors.green,
+          Center(
+            child: AnimatedContainer(
+              height: height,
+                width: width,
+                duration:const  Duration(milliseconds: 300),
+              decoration:const  BoxDecoration(
+                color: Colors.green,
+              ),
             ),
           ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.purple,
         onPressed: (){
           setState(() {
             final random = Random();
@@ -35,7 +39,7 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
             width=random.nextInt(200).toDouble();
           });
           },
-        child:const Icon(Icons.ads_click,size: 25,),
+        child:const Icon(Icons.ads_click,size: 25,color: Colors.white,),
       ),
     );
   }
