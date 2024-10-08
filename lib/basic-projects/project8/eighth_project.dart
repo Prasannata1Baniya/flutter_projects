@@ -1,16 +1,34 @@
 import 'package:flutter/material.dart';
 
-
-class SnakeGame extends StatefulWidget {
-  const SnakeGame({super.key});
+class ToggleSwitch extends StatefulWidget {
+  const ToggleSwitch({super.key});
 
   @override
-  State<SnakeGame> createState() => _SnakeGameState();
+  State<ToggleSwitch> createState() => _ToggleSwitchState();
 }
 
-class _SnakeGameState extends State<SnakeGame> {
+class _ToggleSwitchState extends State<ToggleSwitch> {
+   bool switchOff=false;
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Toggle Switch"),
+      ),
+        body:Column(
+          children: [
+            Switch(
+              activeColor: Colors.red,
+                value: switchOff,
+                onChanged:(bool switchOn){
+              setState(() {
+                switchOff=switchOn;
+              });
+             }
+            ),
+          ],
+        ),
+    );
   }
 }
