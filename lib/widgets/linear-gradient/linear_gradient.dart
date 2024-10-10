@@ -15,7 +15,7 @@ class LinearGradientPage extends StatelessWidget {
               Colors.pink.shade100,
             ]),
       ),
-      child: Center(
+      child: const Center(
         child:Text("Linear Gradient",style: TextStyle(fontSize: 25,
             color:Colors.white,fontWeight: FontWeight.bold),),
       ),

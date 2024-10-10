@@ -7,7 +7,6 @@ import 'package:flutter_projects/basic-projects/project5/fifth_project.dart';
 import 'package:flutter_projects/basic-projects/project6/sixth_project.dart';
 import 'package:flutter_projects/basic-projects/project7/seventh_project.dart';
 import 'package:flutter_projects/basic-projects/project8/eighth_project.dart';
-import 'package:flutter_projects/basic-projects/project9/ninth_project.dart';
 import 'package:flutter_projects/home-page/home_page.dart';
 
 class BasicPropertiesPage extends StatefulWidget {
@@ -52,10 +51,6 @@ class _BasicPropertiesPageState extends State<BasicPropertiesPage> {
       AllProjects(
           navigationPage:()=>Navigator.push(context, MaterialPageRoute(
               builder: (context)=>const ToggleSwitch()))
-      ),
-      AllProjects(
-          navigationPage:()=>Navigator.push(context, MaterialPageRoute(
-              builder: (context)=>const StopWatch()))
       ),
     ];
     List titles=List.generate(15, (index) => Text("Project $index")
