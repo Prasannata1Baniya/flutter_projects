@@ -16,16 +16,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
 
- /* List drawerTitle=List.generate(15, (index) =>const  Column(
-    children: [
-      Text("Basic Properties"),
-      Text("Hive Local Storage"),
-      Text("Flutter widgets"),
-    ],
-  ),
-  );*/
-
-   /* List<String> drawerTitle=[
+    List<String> drawerTitle=[
       "Basic Properties",
       "Hive Local Storage",
       "Flutter Widgets"
@@ -37,9 +28,9 @@ class _HomePageState extends State<HomePage> {
           MaterialPageRoute(builder: (context)=>const HiveStorage())),
       ()=>Navigator.push(context,
           MaterialPageRoute(builder: (context)=>const WidgetsPage()))
-    ];*/
+    ];
 
-    Map<String,VoidCallback> drawerTl={
+    /*Map<String,VoidCallback> drawerTl={
       "Basic Properties":()=>
     Navigator.push(context, MaterialPageRoute(builder: (context)=>const
     BasicPropertiesPage())),
@@ -49,25 +40,23 @@ class _HomePageState extends State<HomePage> {
       "Flutter Widgets":()=>
           Navigator.push(context, MaterialPageRoute(builder: (context)=>const
           HiveStorage())),
-    };
+    };*/
 
     return Scaffold(
       appBar: AppBar(
         title: const Text("All Projects"),
       ),
-      drawer: DrawerPage(
-          //title:drawerTt.map((key, value) => Text(key)).toString() ,
-        title: drawerTl.keys.toString(),
-        leading: ()=>drawerTl.values,
-        /*title:drawerTitle.toString(),
-        leading: ()=>drawerLeading.length,*/
+      drawer: Drawer(
+        backgroundColor: Colors.orange.shade300,
+        child: DrawerPage(
+            //title:drawerTl.map((key, value) => Text(key).toString()) ,
+          //title: drawerTl.keys.toString(),
+          //trailing: ()=>drawerTl.values,
+          title:drawerTitle,
+          trailing: drawerLeading,
+        ),
       ),
       body:const BasicPropertiesPage(),
     );
   }
-}
-
-class AllProjects{
-  final VoidCallback navigationPage;
-  AllProjects({required this.navigationPage,});
 }

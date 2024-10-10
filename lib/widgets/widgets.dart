@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/for-basic-and-widgets/basic_widgets.dart';
 import 'package:flutter_projects/widgets/alert-dialog/alert_dialog.dart';
 import 'package:flutter_projects/widgets/animated-container/animated_container.dart';
 import 'package:flutter_projects/widgets/card/card.dart';
@@ -20,7 +21,7 @@ class _WidgetsPageState extends State<WidgetsPage> {
 
   @override
   Widget build(BuildContext context) {
-    List<ForWidgets> widgets=[
+    List<ForWidgets> widgetsList=[
       ForWidgets(
           title: "Alert Dialog ",
           page: ()=>Navigator.push(context,
@@ -68,19 +69,17 @@ class _WidgetsPageState extends State<WidgetsPage> {
       ),
     ];
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.amberAccent,
+        title:const Text("Widgets",
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+      ),
       body: ListView.builder(
-        itemCount: widgets.length,
+        itemCount: widgetsList.length,
           itemBuilder: (context,index){
-        return Card(
-          child: Row(
-            children: [
-              Text(widgets[index].title),
-              IconButton(
-                  onPressed:()=> widgets[index].page,
-                  icon:const Icon(Icons.arrow_forward_ios,size:15)
-              ),
-            ],
-          ),
+        return Padding(padding: const EdgeInsets.all(8),
+        child: listview(widgetsList[index].title, widgetsList[index].page,
+        )
         );
       }),
     );

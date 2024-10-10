@@ -38,10 +38,14 @@ class _AlertDialogPageState extends State<AlertDialogPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ElevatedButton(
-            onPressed: _dialog,
-              child:const Text("Click Here"),
+          Center(
+            child: ElevatedButton(
+              onPressed: _dialog,
+                child:const Text("Click Here"),
+            ),
           ),
         ],
       ),

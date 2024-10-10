@@ -18,6 +18,8 @@ class _ResponsiveHomePageState extends State<ResponsiveHomePage> {
 
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text("Screen Width:$screenWidth",style:const TextStyle(fontSize: 25),),
           Text("Screen Height:$screenHeight",style:const TextStyle(fontSize: 25),),

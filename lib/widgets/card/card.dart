@@ -7,12 +7,16 @@ class CardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Card(
-            color: Colors.indigo,
-            shadowColor: Colors.indigo.shade300,
-            child: const Text("Hello World",
-              style: TextStyle(fontSize: 25),
+          Center(
+            child: Card(
+              color: Colors.indigo.shade300,
+              shadowColor: Colors.indigo.shade300,
+              child: const Text("Hello World",
+                style: TextStyle(fontSize: 25),
+              ),
             ),
           ),
         ],
