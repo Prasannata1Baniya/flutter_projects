@@ -81,28 +81,3 @@ class AllProjects{
   AllProjects({required this.navigationPage,});
 }
 
-/*
-ListView.builder(
-        itemCount: projects.length,
-          itemBuilder: (context,index){
-            return Card(
-              color: Colors.grey.shade300,
-              margin: const EdgeInsets.all(8),
-              borderOnForeground: true,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text(titles[index]),
-                  IconButton(
-                      onPressed: projects[index].navigationPage,
-                      icon:const Icon(Icons.arrow_forward_ios)
-                  ),
-                ],
-              ),
-            );
-          }),
- */
-
-
-
-
