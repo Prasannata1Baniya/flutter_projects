@@ -10,11 +10,8 @@ class NumberGuessingGame extends StatefulWidget {
 }
 
 //Users can guess upto three times
-
 class _NumberGuessingGameState extends State<NumberGuessingGame> {
   final TextEditingController _controller = TextEditingController();
-
-  //int randomNumber=Random().nextInt(100)+1;
 
   int? randomNumber;
   int? enteredNumber;
@@ -33,31 +30,6 @@ class _NumberGuessingGameState extends State<NumberGuessingGame> {
     randomNumber = Random().nextInt(100) + 1;
     debugPrint("$randomNumber");
   }
-
- /* void submitLimitThree(){
-    while(submitLimit!=3) {
-      setState(() {
-        isSubmitted = !isSubmitted;
-        result(output);
-      });
-      submitLimit++;
-    }
-  }
-
-  void result(output){
-    setState(() {
-      if(randomNumber==enteredNumber){
-       output= "It's right";
-         // style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
-      }
-      else{
-       output= "You are wrong";
-       /*const Text("You are wrong",
-          style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
-        );*/
-      }
-    });
-  }*/
 
   void handleSubmit(){
     if(submitLimit>0 && !gameOver){

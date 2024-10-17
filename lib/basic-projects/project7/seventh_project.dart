@@ -25,14 +25,12 @@ class _MemoryMatchingGameState extends State<MemoryMatchingGame> {
 
   List<bool> revealed=[];
 
-
   @override
   void initState(){
     super.initState();
     imagesData.shuffle();
     revealed=List.generate(imagesData.length, (index) => false);
   }
-
 
   int firstSelected=-1;
   int secondSelected=-1;

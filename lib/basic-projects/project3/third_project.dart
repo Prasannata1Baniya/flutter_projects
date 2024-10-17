@@ -22,7 +22,6 @@ class _ThirdProjectState extends State<ThirdProject> {
 
   void update(text){
     setState(() {
-      //var displayText=Text("$text");
       displayText=text;
       //shuffle and choose a new computer turn each time a player makes a choice
       rowsTitle.shuffle();
