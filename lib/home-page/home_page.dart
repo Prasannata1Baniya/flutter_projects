@@ -30,18 +30,6 @@ class _HomePageState extends State<HomePage> {
           MaterialPageRoute(builder: (context)=>const WidgetsPage()))
     ];
 
-    /*Map<String,VoidCallback> drawerTl={
-      "Basic Properties":()=>
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>const
-    BasicPropertiesPage())),
-      "Hive Local Storage" : ()=>
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>const
-          WidgetsPage())),
-      "Flutter Widgets":()=>
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>const
-          HiveStorage())),
-    };*/
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("All Projects"),
@@ -49,9 +37,6 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         backgroundColor: Colors.orange.shade300,
         child: DrawerPage(
-            //title:drawerTl.map((key, value) => Text(key).toString()) ,
-          //title: drawerTl.keys.toString(),
-          //trailing: ()=>drawerTl.values,
           title:drawerTitle,
           trailing: drawerLeading,
         ),
