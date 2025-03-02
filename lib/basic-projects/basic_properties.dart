@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_projects/basic-projects/project1/first_project.dart';
-import 'package:flutter_projects/basic-projects/project2/second_project.dart';
-import 'package:flutter_projects/basic-projects/project3/third_project.dart';
-import 'package:flutter_projects/basic-projects/project4/fourth_project.dart';
-import 'package:flutter_projects/basic-projects/project5/fifth_project.dart';
-import 'package:flutter_projects/basic-projects/project6/sixth_project.dart';
-import 'package:flutter_projects/basic-projects/project7/seventh_project.dart';
-import 'package:flutter_projects/basic-projects/project8/eighth_project.dart';
+import 'package:flutter_projects/basic-projects/project_1.dart';
+import 'package:flutter_projects/basic-projects/project_2.dart';
+import 'package:flutter_projects/basic-projects/project_3.dart';
+import 'package:flutter_projects/basic-projects/project_4.dart';
+import 'package:flutter_projects/basic-projects/project_5.dart';
+import 'package:flutter_projects/basic-projects/project_6.dart';
+import 'package:flutter_projects/basic-projects/project_7.dart';
+import 'package:flutter_projects/basic-projects/project_8.dart';
 import 'package:flutter_projects/for-basic-and-widgets/basic_widgets.dart';
 
 class BasicPropertiesPage extends StatefulWidget {

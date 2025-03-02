@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/for-basic-and-widgets/basic_widgets.dart';
-import 'package:flutter_projects/widgets/alert-dialog/alert_dialog.dart';
+import 'package:flutter_projects/widgets/alert_dialog.dart';
 import 'package:flutter_projects/widgets/animated-container/animated_container.dart';
-import 'package:flutter_projects/widgets/card/card.dart';
-import 'package:flutter_projects/widgets/container/container.dart';
-import 'package:flutter_projects/widgets/drawer/drawer.dart';
-import 'package:flutter_projects/widgets/future-and-stream-builder/future_or_stream_builder.dart';
-import 'package:flutter_projects/widgets/linear-gradient/linear_gradient.dart';
-import 'package:flutter_projects/widgets/media-query/media_query.dart';
-import 'package:flutter_projects/widgets/stack/stack.dart';
+import 'package:flutter_projects/widgets/card.dart';
+import 'package:flutter_projects/widgets/container.dart';
+import 'package:flutter_projects/widgets/drawer.dart';
+import 'package:flutter_projects/widgets/future_or_stream_builder.dart';
+import 'package:flutter_projects/widgets/linear_gradient.dart';
+import 'package:flutter_projects/widgets/media_query.dart';
+import 'package:flutter_projects/widgets/stack.dart';
 
 class WidgetsPage extends StatefulWidget {
   const WidgetsPage({super.key});
