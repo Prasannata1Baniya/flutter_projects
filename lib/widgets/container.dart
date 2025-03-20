@@ -8,6 +8,7 @@ class ContainerPage extends StatelessWidget {
     return Scaffold(
       body:Column(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children:[
           Container(
             width:80,
