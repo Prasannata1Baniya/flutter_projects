@@ -79,8 +79,13 @@ class _SecondProjectState extends State<SecondProject> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tic Tac Toe: Human vs Computer"),
-      ),
+        title: const Text("Tic Tac Toe: Human vs Computer",
+          style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        leading: const Icon(Icons.arrow_back,color: Colors.white,),
+
+    ),
       body: Column(
         children: [
           const SizedBox(height: 20),

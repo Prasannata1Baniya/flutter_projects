@@ -73,8 +73,9 @@ class _NumberGuessingGameState extends State<NumberGuessingGame> {
       appBar: AppBar(
         backgroundColor: Colors.indigo.shade500,
         title:const Text("Number Guessing Game",
-          style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
+          style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.bold),
         ),
+
       ),
       body:Column(
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -92,6 +92,13 @@ class _MemoryMatchingGameState extends State<MemoryMatchingGame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Match the Pictures",
+          style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        leading: const Icon(Icons.arrow_back,color: Colors.white,),
+      ),
       body:Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,

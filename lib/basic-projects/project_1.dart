@@ -99,6 +99,13 @@ class _FirstProjectCalculatorState extends State<FirstProjectCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title:  const Text("Calculator",
+          style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        leading: const Icon(Icons.arrow_back,color: Colors.white,),
+      ),
       body: Container(
         padding: const EdgeInsets.all(15),
         margin: const EdgeInsets.all(55),

@@ -14,7 +14,11 @@ class _ToggleSwitchState extends State<ToggleSwitch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Toggle Switch"),
+        title: const Text("Toggle Switch",
+          style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        leading: const Icon(Icons.arrow_back,color: Colors.white,),
       ),
         body:Column(
           children: [

@@ -59,6 +59,13 @@ class _ThirdProjectState extends State<ThirdProject> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Rock Paper Scissors",
+          style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        leading: const Icon(Icons.arrow_back,color: Colors.white,),
+      ),
       body: Column(
         children: [
          const Text("Click One",
